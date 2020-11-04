@@ -1,12 +1,19 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import logo from '../images/tenlie-logo.svg'
+import logo from '../images/gatsby-icon.png'
+import bgImage from '../images/pro-amore-equitum.jpg'
 import styled from 'styled-components'
 // background: #717e8e;
 
 const HeaderWrapper = styled.div`
-  background: #5a6572;
+  // background-image: url("https://res.cloudinary.com/abadfish/image/upload/v1604331524/blog/pro-amore-equitum.jpg");
+  background: url("${bgImage}");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  // background: #d3d3d3;
   margin-bottom: 0.45rem;
   h1 {
     img {
@@ -37,14 +44,15 @@ const Header = ({ siteTitle, data }) => (
         </Link>
       </h1>
       <nav>
-        <ul>
-          <li>
+          <p>
             <Link to='/'>Home</Link>
-          </li>
-          <li>
+          </p>
+          <p>
             <Link to='/about'>About</Link>
-          </li>
-        </ul>
+          </p>
+          <p>
+            <Link to='/page-2'>Page 2</Link>
+          </p>
       </nav>
 
     </HeaderContainer>
