@@ -33,13 +33,7 @@ const Header = ({ siteTitle, data }) => (
   <HeaderWrapper>
     <HeaderContainer>
       <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
+        <Link to="/">
           <img src={logo} alt="Logo"/>
         </Link>
       </h1>
